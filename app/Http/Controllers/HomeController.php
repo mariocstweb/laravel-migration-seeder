@@ -11,6 +11,6 @@ class HomeController extends Controller
     public function __invoke()
     {
         $trains = Train::all();
-        return view('home');
+        return view('home', compact('trains'));
     }
 }
